@@ -1,23 +1,15 @@
-##Récupération sources
-```  
-git clone 
-```  
-
-
-
-##Construire image
+##Construction image docker
 ```  
 cd 
 docker build -t mysql .
 ```  
 
-##Lancement container
-```  
-cd 
-docker build -t mysql .
-```  
-
+### Lancement container
+```
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=norsysways -e MYSQL_USER=norsysways -e MYSQL_PASSWORD=norsysways -d mysql
+```
+
+
 
 ### Prerequisites
 
