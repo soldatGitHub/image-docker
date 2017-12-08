@@ -1,8 +1,11 @@
 ### Construction image docker
-```  
-docker build -t *<nom-image>* . 
+```
+docker build -t <nom-image> . 
+```
+Exemple : 
+```
 docker build -t mysql .
-```  
+``` 
 
 ### Lancement container
 ```
