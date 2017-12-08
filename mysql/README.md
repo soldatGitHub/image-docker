@@ -1,6 +1,6 @@
-##Construction image docker
+### Construction image docker
 ```  
-cd 
+docker build -t **<nom-image>** . 
 docker build -t mysql .
 ```  
 
