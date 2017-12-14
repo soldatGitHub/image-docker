@@ -2,11 +2,12 @@
 ```  
 docker build -t <nom-image> . 
 ```  
-Exemple : 
+Exemple si on veut nommer l'image **mysql** : 
 > docker build -t **mysql** .
 
 
 ### Lancement container
+> Syntaxe : 
 ```
 docker run -p <port-externe>:3306 --name <nom-container> \
 	   -e MYSQL_ROOT_PASSWORD=<mdp-root>             \
