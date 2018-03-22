@@ -17,9 +17,14 @@ docker run -p <port-externe>:3306 --name <nom-container> \
            -d <nom-image>                                \
 ```
 Exemple : 
-> docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=norsysways -e MYSQL_USER=norsysways -e MYSQL_PASSWORD=norsysways -d mysql
+> docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=mydatabase -e MYSQL_USER=myuser -e MYSQL_PASSWORD=mypassword -d mysql
 
+> url de connexion : jdbc:mysql://localhost:3306/mydatabase
 
+### Lancement depuis docker-compose
+```
+docker-compose docker-compose up -d --build 
+```
 
 ### Rentrer dans le container
 ```
