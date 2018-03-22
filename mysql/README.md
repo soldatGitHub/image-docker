@@ -23,7 +23,7 @@ Exemple :
 
 ### Lancement depuis docker-compose
 ```
-docker-compose docker-compose up -d --build 
+docker-compose up -d --build 
 ```
 
 ### Rentrer dans le container
