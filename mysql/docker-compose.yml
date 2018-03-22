@@ -1,0 +1,15 @@
+version: "2"
+services:
+  mysql:
+    build: .
+    container_name: mysql
+    ports:
+     - "3306:3306"
+    volumes:
+     -  /tmp:/var/lib/mysql
+    environment:
+     -  MYSQL_ROOT_PASSWORD=root
+     -  MYSQL_DATABASE=mydatabase
+     -  MYSQL_USER=myuser
+     -  MYSQL_PASSWORD=mypassword
+     
