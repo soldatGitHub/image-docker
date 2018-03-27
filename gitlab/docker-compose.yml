@@ -1,0 +1,14 @@
+version: '2'
+services:
+  gitlab:
+    container_name: gitlab
+    image: gitlab/gitlab-ce:latest
+    ports:
+      - 4433:443/tcp
+      - 8080:80/tcp
+      - 2222:22/tcp
+    volumes:
+      - /data/gitlab/config:/etc/gitlab
+      - /data/gitlab/logs:/var/log/gitlab
+      - /data/gitlab/data:/var/opt/gitlab
+
